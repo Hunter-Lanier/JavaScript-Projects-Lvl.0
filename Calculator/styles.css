@@ -1,0 +1,117 @@
+:root {
+  --light: rgb(124 122 126);
+  --light-click: rgb(171 171 173);
+  --dark: rgb(97 96 100);
+  --dark-click: var(--light);
+  --orange: rgb(255 158 11);
+  --orange-click: rgb(203 125 4);
+  --white: white;
+  --darkest: rgb(80 79 84);
+  --font: sans-serif;
+}
+
+* {
+  margin: none;
+  padding: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.calculator-container {
+  background-color: var(--light);
+  height: fit fit-content;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.result-container {
+  display: flexbox;
+  background-color: var(--darkest);
+  width: 235px;
+  height: 100px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.final-result-container {
+  display: flex;
+  outline: 1px solid red;
+  width: 235px;
+  height: 75px;
+  border-radius: 10px 10px 0px 0px;
+  justify-content: right;
+  align-items: center;
+}
+.final-result {
+  color: var(--white);
+  font-family: var(--font);
+  font-size: xxx-large;
+}
+.operation-result-container {
+  display: flex;
+  outline: 1px solid red;
+  width: 235px;
+  height: 25px;
+  align-items: center;
+  justify-content: right;
+  font-size: medium;
+}
+.operation-result {
+  color: var(--white);
+  font-family: var(--font);
+  padding: 5px;
+}
+
+.button-container {
+  display: flexbox;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin: auto;
+}
+
+.button {
+  color: var(--white);
+  height: 50px;
+  width: 60px;
+  outline: solid black 0.25px;
+  border: none;
+  padding: 0;
+  margin: none;
+  font-size: x-large;
+}
+
+.button-light {
+  background-color: var(--light);
+}
+.button-light:active {
+  background-color: var(--light-click);
+}
+.button-dark {
+  background-color: var(--dark);
+}
+.button-dark:active {
+  background-color: var(--dark-click);
+}
+
+.button-orange {
+  background-color: var(--orange);
+}
+.button-orange:active {
+  background-color: var(--orange-click);
+}
+
+.row {
+  display: flex;
+  height: fit-content;
+  width: 235px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-zero {
+  width: 120px !important;
+}

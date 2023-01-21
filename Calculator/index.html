@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Calculator JSt</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator-container">
+        <div class="result-container">
+          <div class="final-result-container">
+            <span class="final-result" id="final-result">100</span>
+          </div>
+          <div class="operation-result-container">
+            <span class="operation-result" id="operation-result">40*2+20</span>
+          </div>
+        </div>
+        <div class="button-container">
+          <div class="row">
+            <button class="button button-dark" id="allClearButton">AC</button>
+            <button class="button button-dark" id="posNegButton">+/-</button>
+            <button class="button button-dark" id="percentButton">%</button>
+            <button class="button button-orange" id="divideButton">÷</button>
+          </div>
+          <div class="row">
+            <button class="button button-light" id="sevenButton">7</button>
+            <button class="button button-light" id="eightButton">8</button>
+            <button class="button button-light" id="nineButton">9</button>
+            <button class="button button-orange" id="multiplyButton">x</button>
+          </div>
+
+          <div class="row">
+            <button class="button button-light" id="fourButton">4</button>
+            <button class="button button-light" id="fiveButton">5</button>
+            <button class="button button-light" id="sixButton">6</button>
+            <button class="button button-orange" id="minusButton">-</button>
+          </div>
+          <div class="row">
+            <button class="button button-light" id="oneButton">1</button>
+            <button class="button button-light" id="twoButton">2</button>
+            <button class="button button-light" id="threeButton">3</button>
+            <button class="button button-orange" id="plusButton">+</button>
+          </div>
+          <div class="row">
+            <button class="button button-zero button-light" id="zeroButton">
+              0
+            </button>
+            <button class="button button-light" id="decimalButton">.</button>
+            <button class="button button-orange" id="equalButton">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/index.js" defer></script>
+  </body>
+</html>
